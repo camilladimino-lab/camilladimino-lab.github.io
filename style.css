@@ -75,46 +75,41 @@ a:hover {
 /* =========================
    ACADEMIC GRID (ICCD-style)
 ========================= */
-
-.grid {
+.projects {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 35px;
+  gap: 40px;
   margin-top: 20px;
 }
 
-/* Each item = clean academic tile */
-.item {
+/* ogni item verticale */
+.project {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-/* Image */
-.item img {
+/* immagine */
+.project img {
   width: 100%;
   height: 120px;
   object-fit: cover;
   border: 1px solid #eee;
 }
 
-/* Title */
-.title {
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.title a {
-  text-decoration: none;
+/* link stile accademico */
+.project a {
   color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.title a:hover {
+.project a:hover {
   text-decoration: underline;
 }
 
-/* Meta text */
-.meta {
+/* descrizione */
+.project div div {
   font-size: 13px;
   color: #666;
 }
