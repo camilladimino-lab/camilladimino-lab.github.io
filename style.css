@@ -77,16 +77,17 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   margin-top: 20px;
+  max-width: 900px;
 }
 
-/* Each project = simple vertical block */
+/* each tile is vertical */
 .project {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
-/* Image */
+/* image on top */
 .project img {
   width: 100%;
   height: 120px;
@@ -94,22 +95,22 @@ a:hover {
   border: 1px solid #eee;
 }
 
-/* Title */
-.project-title {
+/* title */
+.title {
   font-weight: 500;
 }
 
-.project-title a {
-  color: #0066cc;
+.title a {
   text-decoration: none;
+  color: #0066cc;
 }
 
-.project-title a:hover {
+.title a:hover {
   text-decoration: underline;
 }
 
-/* Description */
-.project-desc {
+/* description */
+.desc {
   font-size: 14px;
   color: #555;
 }
