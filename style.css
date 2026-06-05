@@ -72,58 +72,56 @@ a:hover {
   text-decoration: underline;
 }
 
-/* =========================
-   PROJECTS (horizontal layout)
-========================= */
-
-/* =========================
-   PROJECT GRID (HORIZONTAL LAYOUT)
-========================= */
-/* =========================
-   PROJECTS (clean academic style)
-========================= */
-
-
 .projects {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   margin-top: 20px;
 }
 
-/* Each project block */
+/* Each project = simple vertical block */
 .project {
-  width: 320px;              /* controls how many fit per row */
   display: flex;
-  gap: 15px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* Image */
 .project img {
-  width: 110px;
-  height: 75px;
+  width: 100%;
+  height: 120px;
   object-fit: cover;
-  flex-shrink: 0;
   border: 1px solid #eee;
 }
 
-/* Text */
+/* Title */
 .project-title {
   font-weight: 500;
-  margin-bottom: 4px;
 }
 
 .project-title a {
-  text-decoration: none;
   color: #0066cc;
+  text-decoration: none;
 }
 
 .project-title a:hover {
   text-decoration: underline;
 }
 
+/* Description */
 .project-desc {
   font-size: 14px;
   color: #555;
+}
+
+@media (max-width: 1100px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
