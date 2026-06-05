@@ -1,68 +1,76 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>About</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+/* General layout */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.6;
+}
 
-<body>
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
 
-<nav>
-  <h1>Your Name</h1>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+nav h1 {
+  font-size: 18px;
+  font-weight: 500;
+}
 
-<section>
-  <h2>About Me</h2>
-  <p>Write about yourself here.</p>
-</section>
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
 
-</body>
-</html>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #222;
-    color: white;
-    padding: 15px 40px;
-    position: sticky;
-    top: 0;
-  }
+nav a:hover {
+  color: #000;
+}
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
+/* Page content */
+section {
+  max-width: 700px;
+  margin-left: 80px;
+  margin-top: 60px;
+}
 
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
+/* Titles */
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
 
-  nav a:hover {
-    text-decoration: underline;
-  }
+/* Links */
+a {
+  color: #0066cc;
+}
 
-  section {
-    padding: 80px 40px;
-    max-width: 800px;
-    margin: auto;
-  }
+a:hover {
+  text-decoration: underline;
+}
 
-  h2 {
-    margin-bottom: 10px;
-  }
-</style>
+/* Project list */
+.project {
+  margin-bottom: 25px;
+}
+
+.project-title {
+  font-weight: 500;
+}
+
+.project-desc {
+  color: #555;
+  font-size: 14px;
+}
