@@ -75,8 +75,8 @@ a:hover {
 
     .grid-container {
       display: grid;
-      grid-template-rows: 1000px 2000px;
-      grid-template-columns: 4000px 8000px;
+      grid-template-rows: 300px 600px;
+      grid-template-columns: 1200px 2400px;
     }
 
     .grid-item {
