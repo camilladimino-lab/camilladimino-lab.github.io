@@ -76,8 +76,8 @@ a:hover {
  .grid {
   display: grid;
   grid-template-columns: repeat(3, 350px);
-  grid-auto-rows: 200px;
-  gap: 10px;
+  grid-auto-rows: 500px;
+  gap: 30px;
 
   width: max-content;
 }
