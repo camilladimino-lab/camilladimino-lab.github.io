@@ -72,8 +72,24 @@ a:hover {
   text-decoration: underline;
 }
 
-.grid {
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: 100px 200px;
+      grid-template-columns: 400px 800px;
+    }
+
+    .grid-item {
+      font-size: 3rem;
+      background-color: darkviolet;
+      border: 5px solid goldenrod;
+      color: white;
+    }
+
+
+
+/*.grid {
   display: grid;
   grid-template-columns: repeat(3, 0.1fr);
   gap: 100px;
-}
+} */
