@@ -79,6 +79,7 @@ a:hover {
   grid-auto-rows: 200px;
   gap: 10px;
   justify-content: start; /* keeps grid from stretching */
+  width: max-content;
    }
 
 
