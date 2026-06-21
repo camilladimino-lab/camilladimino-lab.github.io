@@ -135,6 +135,17 @@ a:hover {
   object-position: center;
 }
 
+nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-logo {
+    width: 20px;
+    height: 20px;
+}
+
 /*.grid {
   display: grid;
   grid-template-columns: repeat(3, 0.1fr);
