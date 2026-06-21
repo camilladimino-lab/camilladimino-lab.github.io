@@ -101,7 +101,7 @@ a:hover {
 /* Only affects The Liquids Database page */
 .liquids-page .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 5fr));
   gap: 16px;
 }
 
