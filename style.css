@@ -88,7 +88,7 @@ a:hover {
 }
 
 .card img {
-  align: "center"
+  object-position: center;
   width: auto;
   height: 35%;
   object-fit: cover;
