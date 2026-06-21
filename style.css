@@ -98,6 +98,42 @@ a:hover {
   padding: 10px;
 }
 
+/* Only affects The Liquids Database page */
+.liquids-page .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.liquids-page .card {
+  border-radius: 0;           /* squared corners */
+  padding: 10px;
+  max-width: 220px;           /* smaller cards */
+  margin: 0 auto;
+}
+
+.liquids-page .card img {
+  display: block;
+  width: 100%;
+  height: 140px;              /* keeps cards compact */
+  object-fit: cover;
+  object-position: center;    /* centers the image inside the box */
+  margin: 0 auto 10px;
+}
+
+.liquids-page .card-content {
+  text-align: center;         /* optional, looks neat with centered images */
+}
+
+.liquids-page .links {
+  text-align: center;
+}
+.liquids-page .card img {
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+}
 
 /*.grid {
   display: grid;
