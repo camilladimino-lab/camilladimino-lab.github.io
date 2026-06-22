@@ -7,14 +7,16 @@
     .database-sections {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      align-items: stretch;
+      gap: 30px;
       flex-wrap: wrap;
       margin-top: 50px;
     }
 
     .database-card {
-      width: 420px;
-      padding: 40px 36px;
+      flex: 0 1 340px;
+      max-width: 340px;
+      padding: 36px 30px;
       border-radius: 20px;
       text-align: center;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -26,14 +28,14 @@
     }
 
     .database-card h3 {
-      font-size: 2rem;
-      margin: 14px 0 20px;
+      font-size: 1.6rem;
+      margin: 14px 0 18px;
     }
 
     .database-card p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 35px;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 28px;
     }
 
     .pure-card {
@@ -55,21 +57,24 @@
     }
 
     .icon {
-      font-size: 3.5rem;
+      font-size: 3rem;
       line-height: 1;
       margin-bottom: 10px;
     }
 
     .go-button {
-      display: inline-block;
-      padding: 14px 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 24px;
       border-radius: 12px;
       text-decoration: none;
       color: white;
       font-weight: 600;
       font-size: 1rem;
       transition: opacity 0.2s ease;
-      min-width: 240px;
+      min-width: 220px;
     }
 
     .go-button:hover {
@@ -124,25 +129,25 @@
     <div class="database-sections">
 
       <div class="database-card pure-card">
-        <div class="icon"></div>
+        <div class="icon">💧</div>
         <h3>Pure Liquids</h3>
         <p>
-          Data for individual liquid compounds,
-          including thermophysical and transport properties.
+          Neutron and X-ray total scattering data for individual liquid compounds.
+  
         </p>
-       <a href="pure-liquids.html" class="go-button pure-button">
-    Go to Pure Liquids <span>→</span>
-      </a>
+        <a href="pure-liquids.html" class="go-button pure-button">
+          Go to Pure Liquids <span>→</span>
+        </a>
+      </div>
 
       <div class="database-card mixture-card">
-        <div class="icon"></div>
+        <div class="icon">💧+💧</div>
         <h3>Binary Mixtures</h3>
         <p>
-          Data for two-component liquid systems,
-          including mixture properties and phase-equilibrium information.
+          Neutron and X-ray total scattering data for binary liquid mixtures at varied concentrations.
         </p>
         <a href="binary-mixtures.html" class="go-button mixture-button">
-        Go to Binary Mixtures <span>→</span>
+          Go to Binary Mixtures <span>→</span>
         </a>
       </div>
 
