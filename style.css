@@ -148,59 +148,65 @@ nav ul li a {
 /* Landing page cards */
 
 .database-sections {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 450px));
     justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    gap: 50px;
+    margin: 60px auto;
+    max-width: 1000px;
 }
 
 .database-card {
-    width: 420px;
-    padding: 40px;
-    border-radius: 20px;
+    width: 100%;
+    min-height: 420px;
+
+    padding: 50px 40px;
+
+    border-radius: 22px;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     transition: transform 0.2s ease;
-}
-
-.database-card:hover {
-    transform: translateY(-5px);
-}
-
-.database-card h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.database-card p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 35px;
 }
 
 /* Pure liquids */
 
-.pure-card {
-    background: #f5f9ff;
-    border: 2px solid #b9d5ff;
+.go-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-width: 260px;
+    padding: 16px 28px;
+
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
-.pure-card h3 {
-    color: #1e63d5;
+.go-button:hover {
+    transform: translateY(-2px);
 }
 
-/* Binary mixtures */
-
-.mixture-card {
-    background: #f6fff8;
-    border: 2px solid #b9e5c1;
+.pure-button {
+    background: linear-gradient(135deg, #2d7cff, #1e63d5);
+    box-shadow: 0 4px 12px rgba(30,99,213,0.25);
 }
 
-.mixture-card h3 {
-    color: #1f8f42;
+.mixture-button {
+    background: linear-gradient(135deg, #2db44a, #1f8f42);
+    box-shadow: 0 4px 12px rgba(31,143,66,0.25);
 }
-
 /* Icons */
 
 .icon {
@@ -210,28 +216,8 @@ nav ul li a {
 
 /* Buttons */
 
-.go-button {
-    display: inline-block;
-    padding: 14px 30px;
-    border-radius: 12px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: opacity 0.2s ease;
-}
 
-.go-button:hover {
-    opacity: 0.9;
-}
 
-.pure-button {
-    background: #1e63d5;
-}
-
-.mixture-button {
-    background: #1f8f42;
-}
 /*.grid {
   display: grid;
   grid-template-columns: repeat(3, 0.1fr);
