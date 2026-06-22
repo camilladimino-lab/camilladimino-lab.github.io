@@ -149,7 +149,7 @@ nav ul li a {
 
 .database-sections {
     display: grid;
-    grid-template-columns: repeat(2, minmax(350px, 450px));
+    grid-template-columns: repeat(2, minmax(350px, 350px));
     justify-content: center;
     gap: 50px;
     margin: 60px auto;
@@ -158,7 +158,7 @@ nav ul li a {
 
 .database-card {
     width: 100%;
-    min-height: 420px;
+    min-height: 320px;
 
     padding: 50px 40px;
 
