@@ -1,31 +1,155 @@
-<div class="database-sections">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Liquids Database</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .database-sections {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
 
-  <div class="database-card pure-card">
-    <div class="icon">💧</div>
+    .database-card {
+      width: 420px;
+      padding: 40px 36px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
 
-    <h3>Pure Liquids</h3>
+    .database-card:hover {
+      transform: translateY(-5px);
+    }
 
-    <p>
-      Neutron and X-rays total scattering data for individual liquid compounds.
+    .database-card h3 {
+      font-size: 2rem;
+      margin: 14px 0 20px;
+    }
+
+    .database-card p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    .pure-card {
+      background: #f5f9ff;
+      border: 2px solid #b9d5ff;
+    }
+
+    .pure-card h3 {
+      color: #1e63d5;
+    }
+
+    .mixture-card {
+      background: #f6fff8;
+      border: 2px solid #b9e5c1;
+    }
+
+    .mixture-card h3 {
+      color: #1f8f42;
+    }
+
+    .icon {
+      font-size: 3.5rem;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .go-button {
+      display: inline-block;
+      padding: 14px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: opacity 0.2s ease;
+      min-width: 240px;
+    }
+
+    .go-button:hover {
+      opacity: 0.9;
+    }
+
+    .pure-button {
+      background: #1e63d5;
+    }
+
+    .mixture-button {
+      background: #1f8f42;
+    }
+
+    .database-intro {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.7;
+      font-size: 1.08rem;
+    }
+  </style>
+</head>
+
+<body class="liquids-page">
+
+<nav>
+  <h1>Camilla Di Mino</h1>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="theliquidsdatabase.html">
+      <img src="LD_logo.png" alt="Liquids Database logo" class="nav-logo">
+      The Liquids Database
+    </a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>
+      <img src="LD_logo.png" alt="Liquids Database logo" class="nav-logo">
+      The Liquids Database
+    </h2>
+
+    <p class="database-intro">
+      The Liquids Database provides experimental and curated data for liquid systems.
+      The database is organized into two sections:
     </p>
 
-    <a href="pure-liquids.html" class="go-button pure-button">
-      Go to Pure Liquids →
-    </a>
-  </div>
+    <div class="database-sections">
 
-  <div class="database-card mixture-card">
-    <div class="icon">⚪⚪</div>
+      <div class="database-card pure-card">
+        <div class="icon">💧</div>
+        <h3>Pure Liquids</h3>
+        <p>
+          Data for individual liquid compounds,
+          including thermophysical and transport properties.
+        </p>
+        <a href="pure-liquids.html" class="go-button pure-button">
+          Go to Pure Liquids →
+        </a>
+      </div>
 
-    <h3>Binary Mixtures</h3>
+      <div class="database-card mixture-card">
+        <div class="icon">⚪⚪</div>
+        <h3>Binary Mixtures</h3>
+        <p>
+          Data for two-component liquid systems,
+          including mixture properties and phase-equilibrium information.
+        </p>
+        <a href="binary-mixtures.html" class="go-button mixture-button">
+          Go to Binary Mixtures →
+        </a>
+      </div>
 
-    <p>
-      Neutron and X-rays total scattering data for two-component liquid systems.
-    </p>
+    </div>
+  </section>
+</main>
 
-    <a href="binary-mixtures.html" class="go-button mixture-button">
-      Go to Binary Mixtures →
-    </a>
-  </div>
-
-</div>
+</body>
+</html>
